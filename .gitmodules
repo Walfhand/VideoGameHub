@@ -1,2 +1,3 @@
-[submodule "src/VideoGameHub.JanusWrapper.Api"]
-	url = https://github.com/Walfhand/VideoGameHub.JanusWrapper.Api
+[submodule "src/VideoGameHub.BuildingBlock"]
+	path = src/VideoGameHub.BuildingBlock
+	url = https://github.com/Walfhand/VideoGameHub.BuildingBlock

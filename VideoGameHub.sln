@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoGameHub.JanusWrapper.Api", "src\VideoGameHub.JanusWrapper.Api\VideoGameHub.JanusWrapper.Api.csproj", "{9EDDC452-C398-4564-A5FE-F6F0CA3E9DD9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoGameHub.JanusWrapper.Api", "src\VideoGameHub.JanusWrapper.Api\src\VideoGameHub.JanusWrapper.Api\VideoGameHub.JanusWrapper.Api.csproj", "{9EDDC452-C398-4564-A5FE-F6F0CA3E9DD9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2422A1B0-3B1B-4A37-8B71-36847DC757E2}"
 EndProject
@@ -15,6 +15,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{B168C5
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoGameHub.BuildingBlock", "src\VideoGameHub.BuildingBlock\VideoGameHub.BuildingBlock.csproj", "{4BDDD0BB-2F12-45AD-BE7E-CF711955B83F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoGameHub.JanusWrapper", "src\VideoGameHub.JanusWrapper.Api\src\VideoGameHub.JanusWrapper\VideoGameHub.JanusWrapper.csproj", "{CFEDEB7A-385F-4C54-B0A1-8A0F25F718C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JanusWrapper.Api", "JanusWrapper.Api", "{D43A0C65-7E6A-4538-98F6-34116108C75A}"
+	ProjectSection(SolutionItems) = preProject
+		src\VideoGameHub.JanusWrapper.Api\Dockerfile = src\VideoGameHub.JanusWrapper.Api\Dockerfile
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,10 +34,21 @@ Global
 		{9EDDC452-C398-4564-A5FE-F6F0CA3E9DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EDDC452-C398-4564-A5FE-F6F0CA3E9DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EDDC452-C398-4564-A5FE-F6F0CA3E9DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BDDD0BB-2F12-45AD-BE7E-CF711955B83F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BDDD0BB-2F12-45AD-BE7E-CF711955B83F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BDDD0BB-2F12-45AD-BE7E-CF711955B83F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BDDD0BB-2F12-45AD-BE7E-CF711955B83F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFEDEB7A-385F-4C54-B0A1-8A0F25F718C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFEDEB7A-385F-4C54-B0A1-8A0F25F718C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFEDEB7A-385F-4C54-B0A1-8A0F25F718C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFEDEB7A-385F-4C54-B0A1-8A0F25F718C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{010D9978-28B4-41F4-AE5B-47040DFF9B44} = {2422A1B0-3B1B-4A37-8B71-36847DC757E2}
 		{F478B1B9-D11C-4E98-8CC2-53E44C6ADE2C} = {010D9978-28B4-41F4-AE5B-47040DFF9B44}
 		{9EDDC452-C398-4564-A5FE-F6F0CA3E9DD9} = {F478B1B9-D11C-4E98-8CC2-53E44C6ADE2C}
+		{4BDDD0BB-2F12-45AD-BE7E-CF711955B83F} = {2422A1B0-3B1B-4A37-8B71-36847DC757E2}
+		{CFEDEB7A-385F-4C54-B0A1-8A0F25F718C7} = {F478B1B9-D11C-4E98-8CC2-53E44C6ADE2C}
+		{D43A0C65-7E6A-4538-98F6-34116108C75A} = {B168C540-CF81-43FB-861B-018D5582DE29}
 	EndGlobalSection
 EndGlobal
