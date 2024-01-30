@@ -16,7 +16,7 @@ services:
     
   janus-wrapper:
     image: ${REGISTRY:-gamehub}/janus-wrapper:${PLATFORM:-linux}-${TAG:-latest}
-    build: ./src/GameHub.JanusWrapper.Api
+    build: ./src/VideoGameHub.JanusWrapper.Api
     depends_on: 
       janus-gateway:
         condition: service_started
