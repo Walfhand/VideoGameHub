@@ -1,0 +1,25 @@
+version: "2.1"
+services:
+  janus-gateway:
+    image: "canyan/janus-gateway:0.10.7"
+    command: ["/usr/local/bin/janus", "-F", "/usr/local/etc/janus"]
+    ports:
+      - "8088:8088"
+      - "8089:8089"
+      - "8889:8889"
+      - "8001:8000"
+      - "7088:7088"
+      - "7089:7089"
+    volumes:
+      - "./config/janus.jcfg:/usr/local/etc/janus/janus.jcfg"
+      - "./config/janus.eventhandler.sampleevh.jcfg:/usr/local/etc/janus/janus.eventhandler.sampleevh.jcfg"
+    
+  janus-wrapper:
+    image: ${REGISTRY:-gamehub}/janus-wrapper:${PLATFORM:-linux}-${TAG:-latest}
+    build: ./src/GameHub.JanusWrapper.Api
+    depends_on: 
+      janus-gateway:
+        condition: service_started
+    ports:
+      - "8080:8080"
+      - "8081:8081"

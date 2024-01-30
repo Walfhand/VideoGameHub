@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoGameHub.JanusWrapper.Api", "src\VideoGameHub.JanusWrapper.Api\VideoGameHub.JanusWrapper.Api.csproj", "{9EDDC452-C398-4564-A5FE-F6F0CA3E9DD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2422A1B0-3B1B-4A37-8B71-36847DC757E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0BC40A9C-4D2D-492A-AE8F-0CB87BC6386A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{010D9978-28B4-41F4-AE5B-47040DFF9B44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "janusWrapper", "janusWrapper", "{F478B1B9-D11C-4E98-8CC2-53E44C6ADE2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{B168C540-CF81-43FB-861B-018D5582DE29}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EDDC452-C398-4564-A5FE-F6F0CA3E9DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EDDC452-C398-4564-A5FE-F6F0CA3E9DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EDDC452-C398-4564-A5FE-F6F0CA3E9DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EDDC452-C398-4564-A5FE-F6F0CA3E9DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{010D9978-28B4-41F4-AE5B-47040DFF9B44} = {2422A1B0-3B1B-4A37-8B71-36847DC757E2}
+		{F478B1B9-D11C-4E98-8CC2-53E44C6ADE2C} = {010D9978-28B4-41F4-AE5B-47040DFF9B44}
+		{9EDDC452-C398-4564-A5FE-F6F0CA3E9DD9} = {F478B1B9-D11C-4E98-8CC2-53E44C6ADE2C}
+	EndGlobalSection
+EndGlobal
