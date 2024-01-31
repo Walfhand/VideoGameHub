@@ -15,6 +15,7 @@ services:
       - "./config/janus.eventhandler.sampleevh.jcfg:/usr/local/etc/janus/janus.eventhandler.sampleevh.jcfg"
     
   janus-wrapper:
+    
     image: ${REGISTRY:-gamehub}/janus-wrapper:${PLATFORM:-linux}-${TAG:-latest}
     build: 
       context: .
@@ -25,3 +26,5 @@ services:
     ports:
       - "8080:8080"
       - "8081:8081"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
